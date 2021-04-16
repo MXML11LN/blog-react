@@ -11,15 +11,15 @@ const Header = () => {
                             <span></span>
                             <span></span>
                         </div>
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li><a href="works.html" class="menu__link">Works</a></li>
-                            <li><a href="blog.html" class="menu__link">Blog</a></li>
-                            <li><a href="#" class="menu__link">Contact</a></li>
-                        </ul>
-                    </nav>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li><a href="#" class="menu__link">Works</a></li>
+                                <li><a href="#" class="menu__link">Blog</a></li>
+                                <li><a href="#" class="menu__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
             </div>
         </>
     )
