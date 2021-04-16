@@ -1,12 +1,12 @@
 import React from "react"
 import FeaturedWorksItem from "./FeaturedWorksItem"
-import items from "./items"
+import workItems from "./Worksitems"
 
 const FeaturedWorksItemsList = () =>{
     return(
         <>
             {
-                items.map((item,index) => (
+                workItems.map((item,index) => (
                     <div className="fetured-works__item works" key={index}>
                         <FeaturedWorksItem
                             title = {item.title}

@@ -1,7 +1,7 @@
 
 
 
-const items = [
+const worksItems = [
     {   
         title:"Designing Dashboards",
         year:"2020",
@@ -28,4 +28,4 @@ const items = [
     },
 ]
 
-export default items
+export default worksItems
