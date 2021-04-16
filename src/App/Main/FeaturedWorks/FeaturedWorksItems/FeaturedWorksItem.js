@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom"
 
 const FeaturedWorksItem = ({
     title,
@@ -10,11 +11,11 @@ const FeaturedWorksItem = ({
 }) => {
     return(
         <article className="works-item">
-                <a href="/" className="works__img bgimg">
+                <Link to="/article" className="works__img bgimg">
                     <img src={image} alt="work1.png"/>
-                </a>
+                </Link>
                 <div className="works__body">
-                    <a href="/" className="works__title">{title}</a>
+                    <Link to="/article" className="works__title">{title}</Link>
                     <div className="works__info">
                         <div className="works__year">{year}</div>
                         <div className="works__category">{category}</div>
