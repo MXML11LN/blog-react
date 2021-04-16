@@ -6,16 +6,21 @@ const RecentPostsItems= () =>{
     return(
         <>
             {
-            postItems.map((item,index)=>(
-                <div className="recent-posts__column" key={index}>
-                <RecentPostItem
-                    name = {item.name}
-                    date = {item.date}
-                    group= {item.group}
-                    description = {item.description}
-                />
-            </div>
-            ))
+            postItems.map(({
+                name,
+                date,
+                group,
+                description,
+                },index)=>(
+                    <div className="recent-posts__column" key={index}>
+                    <RecentPostItem
+                        name = {name}
+                        date = {date}
+                        group= {group}
+                        description = {description}
+                    />
+                </div>
+                ))
         }
         </>
     )

@@ -1,10 +1,11 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const  RecentPostItem = ({
-    name,
-    date,
+const RecentPostItem = ({
+    name= "No title ...",
+    date="2021",
     group,
-    description,
+    description="No decsription ...",
 }) =>{
     return(
         <>
@@ -15,6 +16,13 @@ const  RecentPostItem = ({
             </article>
         </>
     )
+}
+
+RecentPostItem.propTypes = {
+    name:PropTypes.string,
+    date:PropTypes.string,
+    group:PropTypes.string.isRequired,
+    description:PropTypes.string,
 }
 
 export default RecentPostItem

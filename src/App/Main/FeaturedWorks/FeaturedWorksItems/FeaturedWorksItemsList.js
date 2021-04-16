@@ -6,15 +6,22 @@ const FeaturedWorksItemsList = () =>{
     return(
         <>
             {
-                workItems.map((item,index) => (
-                    <div className="fetured-works__item works" key={index}>
-                        <FeaturedWorksItem
-                            title = {item.title}
-                            year = {item.year}
-                            category = {item.categoty}
-                            text = {item.text}
-                        />
-                    </div>
+                workItems.map(({
+                    title,
+                    year,
+                    category,
+                    text,
+                    image,
+                    },index) => (
+                        <div className="fetured-works__item works" key={index}>
+                            <FeaturedWorksItem
+                                title = {title}
+                                year = {year}
+                                category = {category}
+                                text = {text}
+                                image={image}
+                            />
+                        </div>
                 ))
             }
         </>
