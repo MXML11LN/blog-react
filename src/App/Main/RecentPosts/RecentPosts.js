@@ -6,9 +6,9 @@ import RecentPostsItems from "./RecentPostsItems/RecentPostItems"
 const RecentPosts = () =>{
     return(
         <>
-            <div class="recent-posts__container container">
+            <div className="recent-posts__container container">
                 <RecentPostsHeader/>
-                <div class="recent-posts__items">
+                <div className="recent-posts__items">
                     <RecentPostsItems/>
                 </div>
             </div>

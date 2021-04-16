@@ -1,4 +1,5 @@
 import React from "react"
+import avatar from "./avatar.png"
 
 const Greeting =() => {
     return(
@@ -10,7 +11,7 @@ const Greeting =() => {
                     <a href="#" className="greeting__btn btn">Download Resume</a>
                 </div>
                 <div className="greeting__img">
-                    <img src="src/img/avatar.png" alt="johns_avatar"/>
+                    <img src={avatar} alt="avatar"/>
                 </div>
             </div>
         </>

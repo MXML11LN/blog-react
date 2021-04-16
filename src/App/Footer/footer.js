@@ -1,4 +1,8 @@
 import React from "react"
+import FB from "./Footer_links_svg/fb.svg"
+import Insta from "./Footer_links_svg/insta.svg"
+import Twitter from "./Footer_links_svg/twitter.svg"
+import Linkedin from "./Footer_links_svg/Linkedin.svg"
 
 const Footer = () => {
     return(
@@ -7,16 +11,16 @@ const Footer = () => {
                 <div className="footer__content container">
                     <div className="footer__social social">
                         <a href="" className="social-item">
-                            <img src="src/svg/fb.svg" alt="facebook"/>
+                            <img src={FB} alt="facebook"/>
                         </a>
                         <a href="" className="social-item">
-                            <img src="src/svg/insta.svg" alt="instagram"/>
+                            <img src={Insta} alt="instagram"/>
                         </a>
                         <a href="" className="social-item">
-                            <img src="src/svg/twitter.svg" alt="twitter"/>
+                            <img src={Twitter} alt="twitter"/>
                         </a>
                         <a href="" className="social-item">
-                            <img src="src/svg/Linkedin.svg" alt="Linkedin"/>
+                            <img src={Linkedin} alt="Linkedin"/>
                         </a>
                         </div>
                     <div className="footer__copywrite">Copyright ©2020 All rights reserved</div>
