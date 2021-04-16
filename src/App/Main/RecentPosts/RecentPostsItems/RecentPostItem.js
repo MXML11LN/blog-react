@@ -1,12 +1,17 @@
 import React from "react"
 
-const  RecentPostItem = (props) =>{
+const  RecentPostItem = ({
+    name,
+    date,
+    group,
+    description,
+}) =>{
     return(
         <>
             <article className="recent-posts__item recent-post">
-                <a className="recent-post__title" href="#">{props.name}</a>
-                <div className="recent-post__info">{props.date}<span>|</span>{props.group}</div>
-                <div className="recent-post__text text">{props.description}</div>
+                <a className="recent-post__title" href="#">{name}</a>
+                <div className="recent-post__info">{date}<span>|</span>{group}</div>
+                <div className="recent-post__text text">{description}</div>
             </article>
         </>
     )
