@@ -6,14 +6,14 @@ import FeaturedWorks from "./FeaturedWorks/FeaturedWorks"
 const Main = () => {
     return(
         <>
-            <main class="page">
-                    <section class="greeting">
+            <main className="page">
+                    <section className="greeting">
                         <Greeting/>
                     </section>
-                    <section class="recent-posts">
+                    <section className="recent-posts">
                         <RecentPosts/>
                     </section>
-                    <section class="featured-works">
+                    <section className="featured-works">
                         <FeaturedWorks/>
                     </section>
                 </main>
