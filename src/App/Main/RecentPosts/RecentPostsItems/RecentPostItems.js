@@ -9,10 +9,10 @@ const RecentPostsItems= () =>{
             postItems.map((item,index)=>(
                 <div className="recent-posts__column" key={index}>
                 <RecentPostItem
-                    title = {item.title}
-                    year = {item.year}
-                    category = {item.categoty}
-                    text = {item.text}
+                    name = {item.name}
+                    date = {item.date}
+                    group= {item.group}
+                    description = {item.description}
                 />
             </div>
             ))

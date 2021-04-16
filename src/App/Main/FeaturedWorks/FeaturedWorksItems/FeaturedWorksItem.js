@@ -10,7 +10,7 @@ const FeaturedWorksItem = (props) => {
                     <a href="/" className="works__title">{props.title}</a>
                     <div className="works__info">
                         <div className="works__year">{props.year}</div>
-                        <div className="works__category">{props.categoty}</div>
+                        <div className="works__category">{props.category}</div>
                     </div>
                     <div className="works__text text">{props.text}</div>
                 </div>
