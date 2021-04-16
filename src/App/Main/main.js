@@ -1,22 +1,15 @@
 import React from "react"
-import Greeting from "./Greeting/Greeting"
-import RecentPosts from "./RecentPosts/RecentPosts"
-import FeaturedWorks from "./FeaturedWorks/FeaturedWorks"
+import { Route } from "react-router"
+import MainPage from "./MainPage/MainPage"
+import WorksPage from "./WorksPage/WorksPage"
 
 const Main = () => {
     return(
         <>
             <main className="page">
-                    <section className="greeting">
-                        <Greeting/>
-                    </section>
-                    <section className="recent-posts">
-                        <RecentPosts/>
-                    </section>
-                    <section className="featured-works">
-                        <FeaturedWorks/>
-                    </section>
-                </main>
+                <Route path="/works" exact component={WorksPage}/>
+                <Route path="/" exact component={MainPage}/>
+            </main>
         </>
     )
 }

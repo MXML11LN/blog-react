@@ -1,7 +1,7 @@
 import React from "react"
 import "../common/style.css"
 import Header from "./Header/header"
-import Main from "./Main/main"
+import Main from "./Main/Main"
 import Footer from "./Footer/footer"
 
 const App = () =>{
